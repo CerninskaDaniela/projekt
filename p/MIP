@@ -14,74 +14,80 @@
 
 \pagestyle{headings}
 
-\title{Hry\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2022/23, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Rozdiely medzi použitím umelej inteligencie pri hraní
+strategických hier, keď sa snaží napodobniť človeka a pri snahe hrať čo najlepšie}
 
 \author{Daniela Černinská\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
 	{\small \texttt{xcerninska@stuba.sk}}
 	}
-
-\date{\small 6. november 2022} % upravte
-
-
-
+\date{\small 6. november 2022}
 \begin{document}
-
 \maketitle
-
 \begin{abstract}
-\ldots
+Vývoj umelej inteligencie úzko súvisí s hrami. Míľniky sa označovali prekonávaním človeka počítačom a zlepšovaním sa v Turingovej hre. Napodobňovanie ľudských hráčov je aktuálne aj v súčasnosti a má rôzne využitia. Umelá inteligencia sa učí viacerými spôsobmi, ktoré boli využité aj v týchto míľnikoch. Vývoj napreduje aj v súčasnosti a pre tieto spôsoby sa hľadajú rôzne využitia.
+
 \end{abstract}
-
-
 
 \section{Úvod}
 
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
+História vývoja a ich spojitosti s hrami je uvedená v častiach~\ref{Turingova hra}~\ref{Výhra}~\ref{Porovnanie}.
+V častiach ~\ref{Spôsoby učenia sa} a~\ref{Výzkum} sú vysvetlené spôsoby učenia a súčasný výzkum.
+V časti ~\ref{Význam} sa prepajajú obidva prípady z histórie.
 Záverečné poznámky prináša časť~\ref{zaver}.
 
 
 
-\section{Nejaká časť} \label{nejaka}
-
-Z obr.~\ref{f:rozhod} je všetko jasné. 
-
-\begin{figure*}[tbh]
-\centering
-%\includegraphics[scale=1.0]{diagram.pdf}
-Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Rozhodujúci argument.}
-\label{f:rozhod}
-\end{figure*}
-
-
-
-\section{Iná časť} \label{ina}
+\section{Turingova hra} \label{Turingova hra}
+Alan Turing v roku 1950 vo svojom článku navrhol spôsob testovania strojového inteligencie. Tento spôsob nazval Imitačná hra. V tejto hre su prítomní: človek - moderátor a svedok ( je to
+stroj alebo človek, moderátor nevie kto to je). Moderátor sa pýta svedka(witness) ľubovoľne
+otázky, na ktoré mu odpovedá. Úlohou moderátora je odhadnúť, zistiť či svedok je stroj alebo
+človek. Inteligencia stroja sa takto meria podľa toho ako dokáže stroj napodobniť človeka, tak aby
+presvedčil moderátora, že je človek. Podľa niektorých stroj úspešne zvládne test, aj presvedčí
+aspoň 30 percent ľudí. Turing ďalej predpokladal, že do konca 20. storočia bude stroj schopný oklamať až 70 percent
+moderátorov. Objektívne odhadnúť, či je Turingova hra naozaj vhodná pre testovanie umelej inteligencie je
+zložité. Vystupujú v ňom faktory, ktoré si diskutabilné. Napríklad niektorí majú problém s tým, že
+snahou je oklamať človeka, a či je práve to ten správny  \cite{Neufeld2020-NEUIGT}. Záleží to tiež od schopnosti
+moderátora, ďalej sú otázky ako ktoré odpovede sú podobné odpovediam človeka, lebo aj
+špecifický jedinec by mohol odpovedať nepredvídateľne a tak pôsobiť ako stroj.
 
 
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
+\section{Výhra nad človekom v hrách} \label{Výhra}
+
+Ďalším spôsobom, ktorým sa v minulosti aj v súčasnosti testovala inteligencia strojov (-umelá
+inteligencia) je či dokáže poraziť človeka v hrách ako súboj jedného proti jednému. Hra, ktorá
+mala odhadnúť schopnosti bol šach. Umelá inteligencia hrala so šachovými majstrami a
+podarilo sa jej poraziť ich. Prvou hrou, ktorú zvládol bol šach, neskôr Go, ktorá je
+považovaná za jednu z nakomplexnejších a najzložitejších hier, pretože má veľa možností pri
+každom ťahu. Prekonanie človeka symbolizovalo pokrok. Pri tomto sa vyvinul nový spôsob učenia strojov Machine learning (- k tomu ešte neskôr), ktorý
+bol lepší ako stroje pred tým, lebo sa dostal na oveľa vyššiu úroveň k akej sa bol schopný človek
+priblížiť. Lepšia kreativita, (príklad). Dokázal sa za krátky čas naučiť hrať hry tak, že dokázal
+poraziť najlepších ľudí, ktorí sa tomu venovali roky. Tu sa dá ďalej polemizovať nad tým, že či Turingov test dokáže odhadnúť skutočne schopnosti
+počítača, ak je tak závislí na ľudskom faktory a či neexistuje ešte lepší spôsob myslenia, ktorého človek nie je schopný, ale umelá inteligencia ho schopná je. 
+
+\section{Porovnanie testov} \label{Porovnanie}
+ Prvý test testoval, či je stroj schopný napodobniť človeka tak, aby si iný človek myslel, že je
+človek. - napodobňovanie. V druhom teste išlo o to, že mal byť lepší v hrách. No ani jeden z
+týchto testov nie je schopný odhadnúť čo všetko umelá inteligencia dokáže.
 
 
 
-\section{Dôležitá časť} \label{dolezita}
+\section{Spôsoby učenia sa} \label{Spôsoby učenia sa}
+reinforcement, sám, človek naviguje
+\section{Súčasný výzkum} \label{Výzkum}
 
-
-
-
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
-
-
-
+\section{Význam} \label{Význam}
+Obidva prípady by mohli byť pomôckou pri zlepšovaní človeka. Výskumy, ktoré sa orientujú v
+napodobňovaní ťahov človeka sa snažiť vytvoriť profily človeka a odhadovať aké ťahy by asi
+mohol robiť podľa obrovských databáz hier\cite{behavior}, ktoré už niektorí ľudia hrali. Týmto spôsobom by mohol byť schopný nájsť slabšie stránky človeka a tak ako keď hrá počítač
+sám so sebou, nútiť človeka hrať zložité situácie, a proti ťahom, ktoré by mohol použiť iný človek\cite{scaffolding}, alebo také s ktorými by sa nevedel vysporiadať tak, aby neprehral. Tieto metódy sa už začínajú
+používať pri iných metódach učenia, mohli by byť vhodné aj v komplexnejších situáciách.
 
 \section{Záver} \label{zaver} % prípadne iný variant názvu
 
 
-
-
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
-\bibliography{literatura}
-\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\bibliography{bibliografia}
+\bibliographystyle{abbrv} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
